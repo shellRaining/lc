@@ -1,6 +1,6 @@
-const readline = require("readline");
+import { createInterface } from 'readline';
 
-const rl = readline.createInterface({
+const rl = createInterface({
   input: process.stdin,
   output: process.stdout,
 });
@@ -9,7 +9,7 @@ const rl = readline.createInterface({
  * @param {number[]} time
  * @return {number}
  */
-var numPairsDivisibleBy60 = function (time) {
+function numPairsDivisibleBy60(time) {
   let cnt = 0;
   for (let i = 0; i < time.length; i++) {
     for (let j = i + 1; j < time.length; j++) {
@@ -20,9 +20,9 @@ var numPairsDivisibleBy60 = function (time) {
   }
 
   return cnt;
-};
+}
 
-rl.on("line", (line) => {
-  const arr = line.split(" ").map((el) => parseInt(el));
+rl.on('line', (line) => {
+  const arr = line.split(' ').map((el) => parseInt(el));
   console.log(numPairsDivisibleBy60(arr));
 });

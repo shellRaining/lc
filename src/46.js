@@ -15,6 +15,7 @@ var permute = function (nums) {
   function inner(track, choices) {
     if (track.length == nums.length) {
       res.push(track.slice());
+      return;
     }
 
     for (let i = 0; i < len; i++) {
