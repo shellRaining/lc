@@ -24,3 +24,5 @@ function fourSum(nums: number[], target: number): number[][] {
 
   return res;
 }
+
+export { fourSum };

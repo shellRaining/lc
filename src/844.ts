@@ -78,3 +78,5 @@ console.log(backspaceCompare(s4, t4));
 const s5 = 'ac';
 const t5 = '######ac';
 console.log(backspaceCompare(s5, t5));
+
+export { backspaceCompare };

@@ -42,3 +42,5 @@ const arr = [1, 2, 3, 1];
 console.log(rob(arr));
 const arr1 = [2, 7, 9, 3, 1];
 console.log(rob(arr1));
+
+export { rob };

@@ -18,3 +18,5 @@ function combine(n: number, k: number): number[][] {
   inner(1);
   return res;
 }
+
+export { combine };

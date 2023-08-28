@@ -36,3 +36,5 @@ const n = 12;
 console.log(numSquares(n));
 const n1 = 13;
 console.log(numSquares(n1));
+
+export { numSquares };
