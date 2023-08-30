@@ -1,36 +1,76 @@
-function getMode(map: Map<number, number>) {
-  let res = 0;
+// function getMode(map: Map<number, number>) {
+//   let res = 0;
+//
+//   map.forEach((v) => {
+//     res = Math.max(res, v);
+//   });
+//
+//   return res;
+// }
+//
+// function longestEqualSubarray(nums: number[], k: number): number {
+//   let l = 0;
+//   let res = 0;
+//   const len = nums.length;
+//   const numsMap = new Map();
+//
+//   for (let r = 0; r < len; r++) {
+//     let mode = getMode(numsMap);
+//
+//     if (mode + k < r - l) {
+//       const cnt = numsMap.get(nums[l]);
+//       numsMap.set(nums[l], cnt - 1);
+//       l++;
+//     }
+//     if (numsMap.has(nums[r])) {
+//       const cnt = numsMap.get(nums[r]);
+//       numsMap.set(nums[r], cnt + 1);
+//     } else {
+//       numsMap.set(nums[r], 1);
+//     }
+//     mode = getMode(numsMap);
+//     console.log(l, r, mode);
+//     res = Math.max(res, mode);
+//   }
+//
+//   return res;
+// }
 
-  map.forEach((v) => {
-    res = Math.max(res, v);
-  });
-
-  return res;
-}
+// function lower_bound(nums: number[], target: number): number {
+//   const len = nums.length;
+//   let l = 0;
+//   let r = len;
+//
+//   while (l < r) {
+//     const mid = Math.floor((l + r) / 2);
+//     if (nums[mid] < target) {
+//       l = mid + 1;
+//     } else {
+//       r = mid;
+//     }
+//   }
+//
+//   return l;
+// }
 
 function longestEqualSubarray(nums: number[], k: number): number {
-  let l = 0;
-  let res = 0;
   const len = nums.length;
-  const numsMap = new Map();
+  const pos = Array.from({ length: len + 1 }, () => []);
+  let res = 0;
 
-  for (let r = 0; r < len; r++) {
-    let mode = getMode(numsMap);
+  for (let i = 0; i < len; i++) {
+    pos[nums[i]].push(i);
+  }
 
-    if (mode + k < r - l) {
-      const cnt = numsMap.get(nums[l]);
-      numsMap.set(nums[l], cnt - 1);
-      l++;
+  for (let i = 1; i <= len; i++) {
+    const ps = pos[i];
+    let l = 0;
+    for (let r = 0; r < ps.length; r++) {
+      while (ps[r] - ps[l] - (r - l) > k) {
+        l++;
+      }
+      res = Math.max(res, r - l + 1);
     }
-    if (numsMap.has(nums[r])) {
-      const cnt = numsMap.get(nums[r]);
-      numsMap.set(nums[r], cnt + 1);
-    } else {
-      numsMap.set(nums[r], 1);
-    }
-    mode = getMode(numsMap);
-    console.log(l, r, mode);
-    res = Math.max(res, mode);
   }
 
   return res;
