@@ -85,3 +85,5 @@ console.log(longestEqualSubarray(nums2, k2));
 const nums3 = [3, 2, 1, 4, 1];
 const k3 = 0;
 console.log(longestEqualSubarray(nums3, k3));
+
+export { longestEqualSubarray };
