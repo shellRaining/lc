@@ -1,4 +1,4 @@
-import ListNode from './lib/list.ts';
+import ListNode from '../lib/list.ts';
 
 function partition(head: ListNode | null, x: number): ListNode | null {
   const l1 = new ListNode(0);
