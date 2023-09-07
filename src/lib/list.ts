@@ -38,6 +38,11 @@ class ListNode {
   static print(head: ListNode | null): void {
     console.log(ListNode.toArray(head));
   }
+
+  print(): void {
+    console.log(ListNode.toArray(this));
+  }
 }
 
 export default ListNode;
+export { ListNode };
