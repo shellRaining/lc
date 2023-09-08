@@ -28,3 +28,5 @@ r2 ? r2.print() : console.log('no');
 const head3 = ListNode.fromArray([1, 2]);
 let r3 = removeNthFromEnd(head3, 2);
 r3 ? r3.print() : console.log('no');
+
+export { removeNthFromEnd };

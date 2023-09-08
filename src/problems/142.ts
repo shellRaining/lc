@@ -19,7 +19,7 @@ function detectCycle(head: ListNode | null): ListNode | null {
   slow = head;
   while (slow != fast) {
     slow = slow.next;
-    fast = fast.next
+    fast = fast.next;
   }
 
   return slow;
@@ -33,3 +33,5 @@ ListNode.print(detectCycle(head2));
 console.log(detectCycle(head2));
 const head3 = ListNode.fromArray([1, 2]);
 ListNode.print(detectCycle(head4));
+
+export { detectCycle };

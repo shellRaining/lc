@@ -38,3 +38,5 @@ const root2 = TreeNode.fromArray([]);
 console.log(postorderTraversal(root2));
 const root3 = TreeNode.fromArray([1]);
 console.log(postorderTraversal(root3));
+
+export { postorderTraversal };

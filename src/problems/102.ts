@@ -28,3 +28,5 @@ const root2 = TreeNode.fromArray([1]);
 console.log(levelOrder(root2));
 const root3 = TreeNode.fromArray([]);
 console.log(levelOrder(root3));
+
+export { levelOrder };

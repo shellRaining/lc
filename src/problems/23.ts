@@ -41,3 +41,5 @@ lists1.push(ListNode.fromArray([1, 4, 5]));
 lists1.push(ListNode.fromArray([1, 3, 4]));
 lists1.push(ListNode.fromArray([2, 6]));
 ListNode.print(mergeKLists(lists1));
+
+export { mergeKLists };

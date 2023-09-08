@@ -8,7 +8,7 @@ function middleNode(head: ListNode | null): ListNode | null {
     slow = slow.next;
   }
 
-  return slow
+  return slow;
 }
 
 const head1 = ListNode.fromArray([1, 2, 3, 4, 5]);
@@ -17,3 +17,5 @@ const head2 = ListNode.fromArray([1, 2, 3, 4, 5, 6]);
 middleNode(head2).print();
 const head3 = ListNode.fromArray([1]);
 middleNode(head3).print();
+
+export { middleNode };

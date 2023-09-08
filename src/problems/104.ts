@@ -13,3 +13,5 @@ const root1 = TreeNode.fromArray([3, 9, 20, null, null, 15, 7]);
 console.log(maxDepth(root1));
 const root2 = TreeNode.fromArray([1, null, 2]);
 console.log(maxDepth(root2));
+
+export { maxDepth };

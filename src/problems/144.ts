@@ -38,3 +38,5 @@ console.log(preorderTraversal(root2));
 const root3 = TreeNode.fromArray([1]);
 console.log(preorderTraversal(root3));
 const root4 = TreeNode.fromArray([3, 9, 20, null, null, 15, 7]);
+
+export { preorderTraversal };

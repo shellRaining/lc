@@ -23,3 +23,5 @@ const s2 = 'bbbbb';
 console.log(lengthOfLongestSubstring(s2));
 const s3 = 'pwwkew';
 console.log(lengthOfLongestSubstring(s3));
+
+export { lengthOfLongestSubstring };

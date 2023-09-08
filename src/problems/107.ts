@@ -1,4 +1,5 @@
 import { TreeNode } from '../lib/tree.ts';
+
 function levelOrderBottom(root: TreeNode | null): number[][] {
   if (root == null) return [];
 
@@ -28,3 +29,5 @@ const root2 = TreeNode.fromArray([1]);
 console.log(levelOrderBottom(root2));
 const root3 = TreeNode.fromArray([]);
 console.log(levelOrderBottom(root3));
+
+export { levelOrderBottom };

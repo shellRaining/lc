@@ -53,3 +53,5 @@ function getIntersectionNode(headA: ListNode | null, headB: ListNode | null): Li
 //   tail.next = null;
 //   return fast;
 // }
+
+export { getIntersectionNode };

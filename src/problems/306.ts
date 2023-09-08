@@ -49,3 +49,5 @@ const s2 = '199100199';
 console.log(isAdditiveNumber(s2));
 const s3 = '1203';
 console.log(isAdditiveNumber(s3));
+
+export { isAdditiveNumber };

@@ -28,3 +28,5 @@ const s1 = 'aab';
 console.log(partition(s1));
 const s2 = 'a';
 console.log(partition(s2));
+
+export { partition };

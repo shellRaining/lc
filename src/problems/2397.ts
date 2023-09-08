@@ -50,3 +50,5 @@ const mat3 = [
   [0, 0, 0],
 ];
 console.log(maximumRows(mat3, 2));
+
+export { maximumRows };

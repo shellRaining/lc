@@ -35,3 +35,5 @@ const digits2 = '';
 console.log(letterCombinations(digits2));
 const digits3 = '2';
 console.log(letterCombinations(digits3));
+
+export { letterCombinations };

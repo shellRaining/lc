@@ -28,3 +28,5 @@ const root2 = TreeNode.fromArray([1, null, 3]);
 console.log(rightSideView(root2));
 const root3 = TreeNode.fromArray([]);
 console.log(rightSideView(root3));
+
+export { rightSideView };

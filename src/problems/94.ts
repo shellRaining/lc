@@ -43,3 +43,5 @@ const root2 = TreeNode.fromArray([]);
 console.log(inorderTraversal(root2));
 const root3 = TreeNode.fromArray([1]);
 console.log(inorderTraversal(root3));
+
+export { inorderTraversal };

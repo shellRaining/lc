@@ -22,3 +22,5 @@ const time1 = [30, 20, 150, 100, 40];
 console.log(numPairsDivisibleBy60(time1));
 const time2 = [60, 60, 60];
 console.log(numPairsDivisibleBy60(time2));
+
+export { numPairsDivisibleBy60 };
