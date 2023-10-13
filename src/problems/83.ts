@@ -1,4 +1,4 @@
-import ListNode from './lib/list.ts';
+import { ListNode } from '@shellraining/leetcode-test-lib';
 
 function deleteDuplicates(head: ListNode | null): ListNode | null {
   if (head == null) {
